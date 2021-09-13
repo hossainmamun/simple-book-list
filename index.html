@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book list</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-7">
+                    <!-- form start -->
+                    <form class="text-capitalize">
+                        <legend class="text-center">
+                            <h1 class="text-capitalize font-weight-bold"><i class="fas fa-book-open"></i> HM book list
+                            </h1>
+                        </legend>
+                        <div class="form-group">
+                            <label for="">title</label>
+                            <input type="text" name="" id="title" class="form-control" placeholder="enter title">
+                        </div>
+                        <div class="form-group">
+                            <label for="">author</label>
+                            <input type="text" name="" id="author" class="form-control" placeholder="enter author name">
+                        </div>
+                        <div class="form-group">
+                            <label for="">publisher</label>
+                            <input type="text" name="" id="publisher" class="form-control" placeholder="enter publisher name">
+                        </div>
+                        <div class="form-group">
+                            <label for="">publish year</label>
+                            <input type="text" name="" id="year" class="form-control" placeholder="enter publish year">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="" id="add-btn" class="btn btn-primary btn-block">
+                        </div>
+                    </form>
+                    <!-- form end -->
+
+                    <!-- table start -->
+                    <table class="table table-striped table-bordered mt-5">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>title</th>
+                                <th>Author</th>
+                                <th>Publisher</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody id="book-list"></tbody>
+                    </table>
+                    <!-- table end -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <!-- main js -->
+    <script src="main.js"></script>
+</body>
+
+</html>
